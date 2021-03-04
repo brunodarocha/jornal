@@ -24,7 +24,6 @@ o que você esperava que acontecesse
 se aplicável, prints do que aconteceu
 
 **Desktop (complete as informações, deixe em branco se for smartphone):**
- - OS: [e.g. iOS, Windows]
  - Browser [e.g. chrome, safari]
  - Version [e.g. 22]
 
