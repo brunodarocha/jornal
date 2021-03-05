@@ -1,2 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+Reset.css linguist-language=HTML
+Style.css linguist-language=HTML
