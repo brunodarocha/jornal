@@ -1,20 +1,11 @@
----
-name: pdindo um recurso
-about: Dê uma ideia ao projeto
-title: "<nome do recurso aqui>"
-labels: enhancement
-assignees: ''
-
----
-
-**é relacionado com o problema, descreva.**
+**O que é o recurso para ser adicionado**
  [...]
 
-**Descreva a solução que você gostaria**
+**Descreva o recurso**
 [...]
 
-**alternativas que você considerou.**
+**Alternativas**
 [...]
 
-**contexto adicional**
+**Informações Adicionais**
 [...]
