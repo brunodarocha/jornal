@@ -6,8 +6,8 @@
 1. "download zip"
 1. Descompacte a Pasta
 1. Clique na Pasta "jornal"
-1. Clique duplo em "index.html"
-
+1. Clique duplo em "index.html"</br>
+1. Se você usa git pelo terminal, não precisa de instruções
 ## Chei um Bug / Quero Alguma Coisa a Mais:
 
 1. Clique na Aba "issues"
