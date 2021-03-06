@@ -1,6 +1,6 @@
 # jornal
 
-## Como Caixar?
+## Como Baixar?
 
 1. Clique em "code"
 1. "download zip"
@@ -11,4 +11,4 @@
 ## Chei um Bug / Quero Alguma Coisa a Mais:
 
 1. Clique na Aba "issues"
-1. Preencha <a href="https://github.com/drop-lt/jornal/tree/main/.github/ISSUE_TEMPLATE">os formulários</a> escolhido corretamente, não preenchidos/preenchidos incorretamente serão descartados
+1. Preencha <a href="https://github.com/drop-lt/jornal/tree/main/.github/ISSUE_TEMPLATE">os formulários</a> escolhido corretamente, os formulários não preenchidos/preenchidos incorretamente serão descartados.
