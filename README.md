@@ -1,14 +1,14 @@
 # jornal
 
-## como baixar?
+## Como Baixar?
 
-1. clique em "code"
+1. Clique em "code"
 1. "download zip"
-1. descompacte a pasta
-1. clique na pasta "jornal-main"
-1. clique duplo em "index.html"
+1. Descompacte a Pasta
+1. Clique na Pasta "jornal"
+1. Clique duplo em "index.html"</br>
+1. Se você usa git pelo terminal, não precisa de instruções
+## Chei um Bug / Quero Alguma Coisa a Mais:
 
-## achei um bug / quero alguma coisa a mais:
-
-1. clique na aba "issues"
-1. preencha o formulário escolhido corretamente, não preenchidos/preenchidos incorretamente serão descartados
+1. Clique na Aba "issues"
+1. Preencha <a href="https://github.com/drop-lt/jornal/tree/main/.github/ISSUE_TEMPLATE">os formulários</a> escolhido corretamente, os formulários não preenchidos/preenchidos incorretamente serão descartados.
