@@ -1,0 +1,22 @@
+.ul-nav-cabeçalho {
+    margin-left: 25%;
+}
+
+.li-nav-cabeçalho {
+    display: inline-block;
+    padding: 15px 12px;
+}
+
+.li-nav-cabeçalho a:hover {
+    border-bottom: 5px solid  #303436;
+    padding-bottom: 7px;
+}
+
+.li-nav-cabeçalho a:active {
+    text-transform: none;
+}
+
+.li-nav-cabeçalho a:link {
+    text-decoration: none;
+}
+

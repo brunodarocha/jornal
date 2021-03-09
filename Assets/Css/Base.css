@@ -1,0 +1,22 @@
+@import url(Reset.css);
+@import url(Style.css);
+
+
+
+*{
+    color: white;
+}
+
+body {
+    font-family: 'Shippori Mincho B1';
+    
+    background: rgb(25, 27, 28);
+    color: white;
+
+}
+
+nav {
+    /*padding: 15px 0 15px 0;*/
+    
+    background: rgb(147, 0, 0);
+}
