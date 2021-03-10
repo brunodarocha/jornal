@@ -1,8 +1,12 @@
-.barra-lateral{
-position:absolute;
-bottom: 5px;
-right: 5px;
-width: 125px;
-border: 5px solid blue;
-height: 300px;
+.barra-lateral {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    align-content: space-evenly;
+    border: 5px solid blue;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    height: 300px;
 }
