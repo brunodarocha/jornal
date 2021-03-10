@@ -10,3 +10,11 @@
     flex-flow: column;
     height: 300px;
 }
+
+element.style {
+    border: 5px solid green;
+    padding: 100px 49%;
+}
+.titulo-texto{
+    margin: 0 auto
+}
