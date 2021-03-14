@@ -15,8 +15,17 @@ body {
 
 }
 
+header {
+    position: fixed;
+    width: 100%;
+
+    background: #061832;
+}
+
 nav {
-    /*padding: 15px 0 15px 0;*/
-    
-    background: rgb(147, 0, 0);
+    position: fixed;
+    width: 100%;
+
+    background:   rgb(6, 24, 50);
+    border-top: 1px solid  #CE9F24;
 }
