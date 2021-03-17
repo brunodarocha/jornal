@@ -2,6 +2,9 @@
 @import url(Style.css);
 
 
+html {
+    width: 100%;
+}
 
 *{
     color: white;
@@ -15,17 +18,8 @@ body {
 
 }
 
-header {
-    position: fixed;
-    width: 100%;
-
-    background: #061832;
-}
 
 nav {
-    position: fixed;
-    width: 100%;
-
     background:   rgb(6, 24, 50);
     border-top: 1px solid  #CE9F24;
 }

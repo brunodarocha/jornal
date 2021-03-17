@@ -1,14 +1,27 @@
-.img-cabeçalho {
-    background: #061832;
 
+
+.Cabeçalho--fixo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.h1-cabeçalho {
+    background: #061832;
+}
+
+.img--cabeçalho {
     width: 200px;
     height: 100px;
 
 }
 
-.ul-nav-cabeçalho {
+
+.sei--li-nav-cabeçalho {
     margin-left: 15%;
 }
+
 
 .li-nav-cabeçalho {
     display: inline-block;
