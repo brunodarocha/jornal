@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="../Css/Base.css">
+        <link rel="shortcut icon" href="../">
+        <title> Icj - jornal  </title>
+        <script>
+            function init() {
+                var cabecalho = document.querySelector('.Cabeçalho');
+                var cabecalhoEspaco = document.querySelector('.Cabeçalho-espaço');
+                var cabecalhoOffset = cabecalho.offsetTop;
+    
+                function verificaCabecalho() {
+                    var scrollTop = window.scrollY;
+                    var cabecalhoAltura = cabecalho.offsetHeight;
+    
+                    if(scrollTop >= cabecalhoOffset) {
+                        // rolagem da página passou do elemento, vamos fixá-lo
+                        cabecalho.classList.add('Cabeçalho--fixo');
+                        
+                        // ativa cabecalho-espaco para ocupar o espaço perdido
+                        cabecalhoEspaco.style.height = cabecalhoAltura + 'px';
+                    } else {
+                        // retira a classe adicional do elemento
+                        cabecalho.classList.remove('Cabeçalho--fixo');
+    
+                        // retira a altura do cabecalho-espaco
+                        cabecalhoEspaco.style.height = 0;
+                    }
+                }
+    
+                window.addEventListener('scroll', verificaCabecalho);
+                window.addEventListener('resize', verificaCabecalho);
+            }
+    
+            window.addEventListener('load', init);
+        </script>
+    </head>
+    <body>
+        <header>
+           
+            <h1 class="h1-cabeçalho"><img class=" img--cabeçalho h1-cabeçalho" src="" ></h1>
+           
+            <nav class="Cabeçalho">  
+                <ul>
+                    <li class=" sei--li-nav-cabeçalho li-nav-cabeçalho"><a href="">Início</a></li>
+                    <li class="li-nav-cabeçalho"><a href="">Notícias</a></li>
+                    <li class="li-nav-cabeçalho"><a href="">Esporte</a></li>
+                    <li class="li-nav-cabeçalho"><a href="">Saúde</a></li>
+                    <li class="li-nav-cabeçalho"><a href="">Icj</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <p>__</p>
+
+
+
+
+
+    </body>
+</html>
