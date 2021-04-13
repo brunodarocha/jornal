@@ -1,96 +1,168 @@
 <!DOCTYPE html>
-<html lang="Pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="Base.css">
-        <link rel="shortcut icon" href="../">
-        <title> Icj - jornal  </title>
-        <script>
-            function init() {
-                var cabecalho = document.querySelector('.Cabeçalho');
-                var cabecalhoEspaco = document.querySelector('.Cabeçalho-espaço');
-                var cabecalhoOffset = cabecalho.offsetTop;
-    
-                function verificaCabecalho() {
-                    var scrollTop = window.scrollY;
-                    var cabecalhoAltura = cabecalho.offsetHeight;
-    
-                    if(scrollTop >= cabecalhoOffset) {
-                        // rolagem da página passou do elemento, vamos fixá-lo
-                        cabecalho.classList.add('Cabeçalho--fixo');
-                        
-                        // ativa cabecalho-espaco para ocupar o espaço perdido
-                        cabecalhoEspaco.style.height = cabecalhoAltura + 'px';
-                    } else {
-                        // retira a classe adicional do elemento
-                        cabecalho.classList.remove('Cabeçalho--fixo');
-    
-                        // retira a altura do cabecalho-espaco
-                        cabecalhoEspaco.style.height = 0;
-                    }
-                }
-    
-                window.addEventListener('scroll', verificaCabecalho);
-                window.addEventListener('resize', verificaCabecalho);
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="body">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+            *{
+                font-family: Lato;
+                
             }
-    
-            window.addEventListener('load', init);
-        </script>
-    </head>
-    <body>
-        <header>
-           
-            <h1 class="h1-cabeçalho"><img class=" img--cabeçalho h1-cabeçalho" src="" ></h1>
-           
-            <nav class="Cabeçalho">  
-                <ul>
-                    <li class=" sei--li-nav-cabeçalho li-nav-cabeçalho"><a href="">Início</a></li>
-                    <li class="li-nav-cabeçalho"><a href="">Notícias</a></li>
-                    <li class="li-nav-cabeçalho"><a href="">Esporte</a></li>
-                    <li class="li-nav-cabeçalho"><a href="">Saúde</a></li>
-                    <li class="li-nav-cabeçalho"><a href="">Icj</a></li>
-                </ul>
-            </nav>
-        </header>
+            *::-webkit-scrollbar{
+               background-color: rgba(0,0,0,0);
+            }
         
-        <article>
-            <main>
-                <img id="principal" src="" alt="fotos"/>
-                <div id="titulo-texto-tudo">
-                    <div class="titulo-texto">
-                        <h2 class="titulo">titulo</h2>
-                        <p class="texto">texto</p>
-                    </div>
-                    <div class="titulo-texto">
-                        <h2 class="titulo">titulo</h2>
-                        <p class="texto">texto</p>
-                    </div>
-                    <div class="titulo-texto">
-                        <h2 class="titulo">titulo</h2>
-                        <p class="texto">titulo</p>
-                    </div>
-                    <div class="titulo-texto">
-                        <h2 class="titulo">texto</h2>
-                        <p class="texto">titulo</p>
-                    </div>
-                    <div class="titulo-texto">
-                        <h2 class="titulo">texto</h2>
-                        <p class="texto">titulo</p>
-                    </div>
-                </div>
-                <div class="barra-lateral">
-                    <p>texto da barra</p>
-                    <button id="botao1">1</button>
-                    <button id="botao2">2</button>
-                    <button id="botao3">3</button>
-                    <button id="botao4">4</button>
-                    <button id="botao5">5</button>
-                </div>
-            </main>
-        </article>
-    </body>
+            html, body{
+                padding:0;
+                margin:0;
+                color: white;
+                background-color: #00205B;
+                width: 100vw;
+                height:100vh;
+            }
+            .fundo{
+                display:grid;
+                grid-template-columns: auto auto auto auto;
+                grid-template-rows: auto auto auto;
+                grid-gap: 30px;
+                padding: 10px 20px;
+            }
+            .manchete{
+               padding: 0;
+            }
+            .caixa-imagem{
+                border: 2px solid #FFC72C;
+                width: 100%;
+                height: 100px;
+                background-color: #3a3a3a;
+            }
+            .texto{
+                margin: 0;
+            }
+            .topo{
+                display:flex;
+                background-color:#FFF;
+                color: black;
+                height: 100px;
+            }
+
+            .topo > img{
+                padding-left: 75px;
+            }
+
+            .botoes{
+                display:flex;
+                flex-direction: row;
+                align-items:center;
+                justify-content: space-around;
+                padding: 0 50px;
+                width: 100%;
+            }
+            .link {
+                background-color: #c4c4c4;
+                color: black;
+                text-decoration: none;
+                padding: 5px 10px;
+            }
+
+            footer{
+                background-color: black;
+                height: 5px;
+                width: 100%;
+                padding: 5px;
+            }
+        </style>
+        <div class="topo">
+            <img src="" alt="Logo" width="500px">
+            <div class="botoes">
+                <a href="" class="link">Esportes</a>
+                <a href="" class="link">Notícias</a>
+                <a href="" class="link">&nbsp;&nbsp;&nbsp;&nbsp;Icj&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a href="" class="link">Saúde</a>
+                <a href="" class="link">Outros</a>
+            </div>
+        </div>
+        <div class="fundo">
+            <div class="manchete">
+                <div class="caixa-imagem">
+    <img class="imagem" src="" alt="img">
+</div>
+                <p class="texto">MANCHETE</p>
+            </div>
+            <div class="manchete">
+                <div class="caixa-imagem">
+    <img class="imagem" src="" alt="img">
+</div>
+                <p class="texto">MANCHETE</p>
+            </div>
+            <div class="manchete">
+                <div class="caixa-imagem">
+    <img class="imagem" src="" alt="img">
+</div>
+                <p class="texto">MANCHETE</p>
+            </div>
+            <div class="manchete">
+                <div class="caixa-imagem">
+    <img class="imagem" src="" alt="img">
+</div>
+                <p class="texto">MANCHETE</p>
+            </div>
+            <div class="manchete">
+                <div class="caixa-imagem">
+    <img class="imagem" src="" alt="img">
+</div>
+                <p class="texto">MANCHETE</p>
+            </div>
+            <div class="manchete">
+                <div class="caixa-imagem">
+    <img class="imagem" src="" alt="img">
+</div>
+                <p class="texto">MANCHETE</p>
+            </div>
+            <div class="manchete">
+                <div class="caixa-imagem">
+    <img class="imagem" src="" alt="img">
+</div>
+                <p class="texto">MANCHETE</p>
+            </div>
+            <div class="manchete">
+                <div class="caixa-imagem">
+    <img class="imagem" src="" alt="img">
+</div>
+                <p class="texto">MANCHETE</p>
+            </div>
+            <div class="manchete">
+                <div class="caixa-imagem">
+    <img class="imagem" src="" alt="img">
+</div>
+                <p class="texto">MANCHETE</p>
+            </div>
+            <div class="manchete">
+                <div class="caixa-imagem">
+    <img class="imagem" src="" alt="img">
+</div>
+                <p class="texto">MANCHETE</p>
+            </div>
+            <div class="manchete">
+                <div class="caixa-imagem">
+    <img class="imagem" src="" alt="img">
+</div>
+                <p class="texto">MANCHETE</p>
+            </div>
+            <div class="manchete">
+                <div class="caixa-imagem">
+    <img class="imagem" src="" alt="img">
+</div>
+                <p class="texto">MANCHETE</p>
+            </div>
+        </div>
+    </div>
+
+</body>
 </html>
